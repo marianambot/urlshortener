@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Shorturls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url full</th>
+      <th>Url string</th>
+      <th>Url num accesses</th>
+      <th>Url ip access</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shorturls.each do |shorturl| %>
+      <tr>
+        <td><%= shorturl.url_full_id %></td>
+        <td><%= shorturl.url_string %></td>
+        <td><%= shorturl.url_num_accesses %></td>
+        <td><%= shorturl.url_ip_access %></td>
+        <td><%= link_to 'Show', shorturl %></td>
+        <td><%= link_to 'Edit', edit_shorturl_path(shorturl) %></td>
+        <td><%= link_to 'Destroy', shorturl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shorturl', new_shorturl_path %>

@@ -1,0 +1,1 @@
+json.partial! "fullurls/fullurl", fullurl: @fullurl

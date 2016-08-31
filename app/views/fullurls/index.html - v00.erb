@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fullurls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url string</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fullurls.each do |fullurl| %>
+      <tr>
+        <td><%= fullurl.url_string %></td>
+        <td><%= link_to 'Show', fullurl %></td>
+        <td><%= link_to 'Edit', edit_fullurl_path(fullurl) %></td>
+        <td><%= link_to 'Destroy', fullurl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fullurl', new_fullurl_path %>

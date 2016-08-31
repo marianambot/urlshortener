@@ -1,0 +1,2 @@
+class Fullurl < ApplicationRecord
+end

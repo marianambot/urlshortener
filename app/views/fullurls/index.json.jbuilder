@@ -1,0 +1,1 @@
+json.array! @fullurls, partial: 'fullurls/fullurl', as: :fullurl

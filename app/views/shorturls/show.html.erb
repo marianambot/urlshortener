@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url full:</strong>
+  <%= @shorturl.url_full_id %>
+</p>
+
+<p>
+  <strong>Url string:</strong>
+  <%= @shorturl.url_string %>
+</p>
+
+<p>
+  <strong>Url num accesses:</strong>
+  <%= @shorturl.url_num_accesses %>
+</p>
+
+<p>
+  <strong>Url ip access:</strong>
+  <%= @shorturl.url_ip_access %>
+</p>
+
+<%= link_to 'Edit', edit_shorturl_path(@shorturl) %> |
+<%= link_to 'Back', shorturls_path %>

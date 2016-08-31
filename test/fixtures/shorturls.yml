@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url_full_id: 1
+  url_string: MyString
+  url_num_accesses: 1
+  url_ip_access: MyString
+
+two:
+  url_full_id: 1
+  url_string: MyString
+  url_num_accesses: 1
+  url_ip_access: MyString
